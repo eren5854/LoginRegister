@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "IUD1kLMkFMgwerv3BHN3LanrAVpOcrs/n3Z9AGlQjlU=",
+  "Source": "LoginRegisterServer.WebAPI",
+  "BasePath": "_content/LoginRegisterServer.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
