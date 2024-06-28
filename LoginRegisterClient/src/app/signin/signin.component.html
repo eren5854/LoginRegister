@@ -1,0 +1,72 @@
+<div class="wrapper">
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-6 side-image">
+                <img src="assets/code.png">
+                <div class="text">
+                    <!-- <p>Welcome To Login Application</p> -->
+                </div>
+            </div>
+            <div class="col-md-6 right">
+                <div class="input-box">
+                    <form #loginForm="ngForm" (ngSubmit)="signIn(loginForm)">
+                    <header>Create Account</header>
+                    <div class="input-field">
+                        <label for="firstName">Name</label>
+                        <input validate type="text" ngModel name="firstName" class="form-control" id="firstName" required autocomplete="off">
+                        <div class="invalid-feedback">
+                            Name must be valid.
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <label for="lastName">Last Name</label>
+                        <input validate type="text" ngModel name="lastName" class="form-control" id="lastName" required autocomplete="off">
+                        <div class="invalid-feedback">
+                            Last Name must be valid.
+                        </div>
+                    </div> 
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input validate type="text" ngModel name="email" class="form-control" id="email" required  minlength="11" autocomplete="off">
+                        <div class="invalid-feedback">
+                            Email must be valid.
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Password</label>
+                        <div class="input-group mb-3">
+                            <input required minlength="8" validate (focus)="isPasswordFocus = true" (blur)="isPasswordFocus = false" #password ngModel name="password"   (keyup)="checkRegexPatternForPassword(password)" type="password" class="form-control">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i (click)="showOrHidePassword(password)" *ngIf="!isShowPassword" class="fa-solid fa-eye"></i>
+                                <i (click)="showOrHidePassword(password)" *ngIf="isShowPassword" class="fa-solid fa-eye-slash"></i>
+                            </span>
+                          </div>
+                          <div *ngIf="isPasswordFocus" class="psswrd-req">
+                            <ul class="password-ul">
+                                <li class="pw-error" id="minCharacter">Min 8 caracter</li>
+                                <li class="pw-error" id="upperLetter">Büyük harf</li>
+                                <li class="pw-error" id="lowerLetter">Küçük harf</li>
+                            </ul>
+                            <ul class="password-ul">
+                                <li class="pw-error" id="specialLetter">Özel karakter</li>
+                                <li class="pw-error" id="numLetter">Sayı</li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="input-field">
+                        <div class="btns">
+                            <button [disabled]="!loginForm.valid" class="submit">
+                                <i class="fa-solid fa-floppy-disk fa-bounce"></i>
+                                Save</button>
+                            <a routerLink="/login"><button class="submit"><i class="fa-solid fa-xmark fa-shake"></i> Cancel</button></a>
+                        </div>
+                    </div>
+                    <div class="signin">
+                        <span>Already have an account? <a routerLink="/login">Login</a></span>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

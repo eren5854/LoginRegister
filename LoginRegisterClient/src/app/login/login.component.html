@@ -1,0 +1,41 @@
+<div class="wrapper">
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-6 side-image">
+                <img src="assets/code.png">
+                <div class="text">
+                    <!-- <p>Welcome To Login Application</p> -->
+                </div>
+            </div>
+            <div class="col-md-6 right">
+                <div class="input-box">
+                    <form #loginForm="ngForm" (ngSubmit)="signIn(loginForm)">
+                    <header>Login Website</header>
+                    <div class="input-field">
+                        <input  type="text" ngModel name="email" class="input" id="email" required  minlength="11" autocomplete="off">
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                        <!-- <div class="invalid-feedback">
+                            Email must be valid.
+                        </div> -->
+                    </div>
+                    <div class="input-field">
+                        <input  type="password" ngModel name="password" class="input" id="password" required minlength="8">
+                        <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+                        <!-- <div class="invalid-feedback">
+                            Password must be valid.
+                        </div> -->
+                    </div>
+                    <div class="input-field">
+                        <button [disabled]="!loginForm.valid" class="submit">
+                            <i class="fa-solid fa-lock fa-shake"></i>
+                            Sign In</button>
+                    </div>
+                    <div class="signin">
+                        <span>Do you haven't an account? <a routerLink="/signin">Sign in</a></span>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
