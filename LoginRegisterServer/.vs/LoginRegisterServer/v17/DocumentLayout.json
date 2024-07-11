@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F39D2142-50AA-4138-A9CB-C0743BC91961}|LoginRegisterServer.Infrastructure\\LoginRegisterServer.Infrastructure.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F39D2142-50AA-4138-A9CB-C0743BC91961}|LoginRegisterServer.Infrastructure\\LoginRegisterServer.Infrastructure.csproj|solutionrelative:loginregisterserver.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B3DC4AB-C49B-4127-88A6-D5E3008A3499}|LoginRegisterServer.WebAPI\\LoginRegisterServer.WebAPI.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.webapi\\middlewares\\extensionsmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B3DC4AB-C49B-4127-88A6-D5E3008A3499}|LoginRegisterServer.WebAPI\\LoginRegisterServer.WebAPI.csproj|solutionrelative:loginregisterserver.webapi\\middlewares\\extensionsmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.application\\features\\auth\\sendconfirmemal\\sendconfirmemailcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|solutionrelative:loginregisterserver.application\\features\\auth\\sendconfirmemal\\sendconfirmemailcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B3DC4AB-C49B-4127-88A6-D5E3008A3499}|LoginRegisterServer.WebAPI\\LoginRegisterServer.WebAPI.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,9 +21,35 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 207,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SendConfirmEmailCommandHandler.cs",
+              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmal\\SendConfirmEmailCommandHandler.cs",
+              "RelativeDocumentMoniker": "LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmal\\SendConfirmEmailCommandHandler.cs",
+              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmal\\SendConfirmEmailCommandHandler.cs",
+              "RelativeToolTip": "LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmal\\SendConfirmEmailCommandHandler.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T23:28:11.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
+              "RelativeDocumentMoniker": "LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
+              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
+              "RelativeToolTip": "LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T23:24:33.176Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -35,51 +57,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ExtensionsMiddleware.cs",
-              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Middlewares\\ExtensionsMiddleware.cs",
-              "RelativeDocumentMoniker": "LoginRegisterServer.WebAPI\\Middlewares\\ExtensionsMiddleware.cs",
-              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Middlewares\\ExtensionsMiddleware.cs",
-              "RelativeToolTip": "LoginRegisterServer.WebAPI\\Middlewares\\ExtensionsMiddleware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T01:29:05.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "LoginRegisterServer.Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "LoginRegisterServer.Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T01:27:18.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "LoginRegisterServer.WebAPI\\Controllers\\AuthController.cs",
               "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Controllers\\AuthController.cs",
               "RelativeToolTip": "LoginRegisterServer.WebAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T01:17:46.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApiController.cs",
-              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
-              "RelativeDocumentMoniker": "LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
-              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
-              "RelativeToolTip": "LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T01:16:31.034Z"
+              "WhenOpened": "2024-07-11T17:52:56.368Z",
+              "EditorCaption": ""
             }
           ]
         }

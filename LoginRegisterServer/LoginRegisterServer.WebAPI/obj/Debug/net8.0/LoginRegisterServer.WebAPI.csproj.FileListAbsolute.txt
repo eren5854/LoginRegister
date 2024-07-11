@@ -153,3 +153,14 @@ F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.
 F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\ED.GenericRepository.dll
 F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\Scrutor.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\AutoMapper.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\FluentValidation.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\DefaultCorsPolicyNugetPackage.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\FluentEmail.Core.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\GenericEmailService.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\MailKit.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\MimeKit.dll

@@ -1,0 +1,66 @@
+<div class="wrapper">
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-6 side-image">
+                <img src="assets/code.png">
+                <div class="text">
+                    <!-- <p>Blog Sayfama Hoşgeldin</p> -->
+                </div>
+            </div>
+            <div class="col-md-6 right">
+                <div class="input-box">
+                    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+                    <header>Login</header>
+                    <div class="input-field">
+                        <input  type="text" [(ngModel)]="loginModel.EmailOrUserName" name="email" class="input" id="email" required  minlength="1" autocomplete="off">
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Email / User Name</label>
+                        <!-- <div class="invalid-feedback">
+                            Email must be valid.
+                        </div> -->
+                    </div>
+                    <div class="input-field">
+                        <input  type="password" [(ngModel)]="loginModel.Password" name="password" class="input" id="password" required minlength="6">
+                        <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+                        <!-- <div class="invalid-feedback">
+                            Password must be valid.
+                        </div> -->
+                    </div>
+                    <div class="input-field">
+                        <button [disabled]="!loginForm.valid" class="submit">
+                            <i class="fa-solid fa-lock fa-shake"></i>
+                            Sign In</button>
+                            <div style="float: right; margin-top: 5px;">
+                                <a data-toggle="modal" data-target="#sendConfirmEmailModal" href="#">Onay mailini tekrar gönder</a>
+                            </div>
+                    </div>
+                    <div class="signin">
+                        <span>Do you haven't an account? <a routerLink="/signin">Sign in</a></span>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="sendConfirmEmailModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" >Onay Maili Gönder</h3>
+          <button type="button" #sendConfirmEmailModalCloseBtn data-dismiss="modal" class="btn btn-outline-danger" aria-label="Close">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>Mail Adresi</label>
+                <input type="email" [(ngModel)]="email" class="form-control">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button (click)="sendConfirmEmail()" type="button" class="btn btn-primary">Gönder</button>
+        </div>
+      </div>
+    </div>
+  </div>

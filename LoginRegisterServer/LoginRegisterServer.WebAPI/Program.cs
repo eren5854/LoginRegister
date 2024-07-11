@@ -1,3 +1,4 @@
+using DefaultCorsPolicyNugetPackage;
 using LoginRegisterServer.Application;
 using LoginRegisterServer.Infrastructure;
 using LoginRegisterServer.WebAPI.Middlewares;
@@ -5,6 +6,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDefaultCors();
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -46,6 +49,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors();
 
 ExtensionsMiddleware.CreateAdmin(app);
 

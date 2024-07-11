@@ -1,0 +1,108 @@
+<div class="wrapper">
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-6 side-image">
+                <img src="assets/code.png">
+                <div class="text">
+                    <!-- <p>Blog Sayfama Hoşgeldin</p> -->
+                </div>
+            </div>
+            <div class="col-md-6 right">
+                <div class="input-box">
+                    <form #loginForm="ngForm" (ngSubmit)="signIn(loginForm)">
+                    <header style="padding-bottom: 10px;">Create Account</header>
+                    <div class="input-field">
+                        <label for="firstName">First Name</label>
+                        <input validate type="text" [(ngModel)]="registerModel.firstName" name="firstName" class="form-control" id="firstName" required autocomplete="off">
+                        <div class="invalid-feedback">
+                            Name must be valid.
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <label for="lastName">Last Name</label>
+                        <input validate type="text" [(ngModel)]="registerModel.lastName" name="lastName" class="form-control" id="lastName" required autocomplete="off">
+                        <div class="invalid-feedback">
+                            Last Name must be valid.
+                        </div>
+                    </div> 
+                    <div class="input-field">
+                        <label for="userName">User Name</label>
+                        <input validate type="text" [(ngModel)]="registerModel.userName" name="userName" class="form-control" id="userName" required autocomplete="off">
+                        <div class="invalid-feedback">
+                            User name must be valid.
+                        </div>
+                    </div> 
+                    <div class="input-field">
+                        <label for="dateOfBirth">Date Of Birth</label>
+                        <input validate type="date" [(ngModel)]="registerModel.dateOfBirth" name="dateOfBirth" class="form-control" id="dateOfBirth" autocomplete="off">
+                        <div class="invalid-feedback">
+                            Date of birth must be valid.
+                        </div>
+                    </div> 
+                    <div class="input-field">
+                        <label for="profilePicture">Profile Picture</label>
+                        <input validate type="text" [(ngModel)]="registerModel.profilePicture" name="profilePicture" class="form-control" id="profilePicture" autocomplete="off">
+                        <div class="invalid-feedback">
+                            Profile picture must be valid.
+                        </div>
+                    </div> 
+                    <div class="input-field">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input validate type="text" [(ngModel)]="registerModel.phoneNumber" name="phoneNumber" class="form-control" id="phoneNumber" autocomplete="off">
+                        <div class="invalid-feedback">
+                            Phone number must be valid.
+                        </div>
+                    </div> 
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input validate type="text" [(ngModel)]="registerModel.email" name="email" class="form-control" id="email" required  minlength="11" autocomplete="off">
+                        <div class="invalid-feedback">
+                            Email must be valid.
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Password</label>
+                        <input validate type="password" [(ngModel)]="registerModel.password" name="password" class="form-control" id="password" required  minlength="11" autocomplete="off">
+                        <div class="invalid-feedback">
+                            Email must be valid.
+                        </div>
+                    </div>
+                    <!-- <div class="input-field">
+                        <label for="password">Password</label>
+                        <div class="input-group mb-3">
+                            <input required minlength="8" validate (focus)="isPasswordFocus = true" (blur)="isPasswordFocus = false" #password [(ngModel)]="registerModel.password" name="password"   (keyup)="checkRegexPatternForPassword(password)" type="password" class="form-control">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i (click)="showOrHidePassword(password)" *ngIf="!isShowPassword" class="fa-solid fa-eye"></i>
+                                <i (click)="showOrHidePassword(password)" *ngIf="isShowPassword" class="fa-solid fa-eye-slash"></i>
+                            </span>
+                          </div>
+                          <div *ngIf="isPasswordFocus" class="psswrd-req">
+                            <ul class="password-ul">
+                                <li class="pw-error" id="minCharacter">Min 8 Character</li>
+                                <li class="pw-error" id="upperLetter">Upper Case</li>
+                                <li class="pw-error" id="lowerLetter">Lower Case</li>
+                            </ul>
+                            <ul class="password-ul">
+                                <li class="pw-error" id="specialLetter">Special Character</li>
+                                <li class="pw-error" id="numLetter">Number</li>
+                            </ul>
+                          </div>
+                    </div> -->
+                    <div class="input-field">
+                        <div class="btns">
+                            <button [disabled]="!loginForm.valid" class="submit">
+                                <i class="fa-solid fa-floppy-disk fa-bounce"></i>
+                                Save</button>
+                            <a routerLink="/login"><button class="submit"><i class="fa-solid fa-xmark fa-shake"></i> Cancel</button></a>
+                        </div>
+                    </div>
+                    <div class="signin">
+                        <span>Already have an account? <a routerLink="/login">Login</a></span>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

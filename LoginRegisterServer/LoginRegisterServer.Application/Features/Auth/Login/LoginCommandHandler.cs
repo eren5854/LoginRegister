@@ -13,6 +13,8 @@ internal sealed class LoginCommandHandler(
 {
     public async Task<Result<LoginCommandResponse>> Handle(LoginCommand request, CancellationToken cancellationToken)
     {
+
+
         string emailOrUserName = request.EmailOrUserName.ToUpper();
         AppUser? user = await userManager.Users
             .FirstOrDefaultAsync(p => p.UserName == emailOrUserName || p.Email == emailOrUserName, cancellationToken);

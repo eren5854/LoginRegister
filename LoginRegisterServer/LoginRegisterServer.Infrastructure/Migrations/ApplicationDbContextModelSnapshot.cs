@@ -41,14 +41,14 @@ namespace LoginRegisterServer.Infrastructure.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateOnly>("DateOfBirth")
+                    b.Property<DateOnly?>("DateOfBirth")
                         .HasColumnType("date");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("EmailConfirmCode")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("EmailConfirmCode")
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("EmailConfirmCodeExpires")
                         .HasColumnType("datetime2");

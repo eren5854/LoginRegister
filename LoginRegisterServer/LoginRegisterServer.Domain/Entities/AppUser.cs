@@ -7,14 +7,14 @@ public sealed class AppUser: IdentityUser<Guid>
     public string FirstName { get; set; } = string.Empty;
     public string LastName { get; set; } = string.Empty;
     public string FullName => string.Join(", ", FirstName, LastName);
-    public DateOnly DateOfBirth { get; set; }
+    public DateOnly? DateOfBirth { get; set; }
     public string? ProfilePicture { get; set; }
     public UserRoleSmartEnum UserRole { get; set; } = UserRoleSmartEnum.User;
 
     public string? RefreshToken {  get; set; }
     public DateTime? RefreshTokenExpires { get; set; }
 
-    public string? EmailConfirmCode { get; set; }
+    public int EmailConfirmCode { get; set; }
     public DateTime? EmailConfirmCodeExpires { get; set; }
 
     public bool IsDeleted { get; set; }
