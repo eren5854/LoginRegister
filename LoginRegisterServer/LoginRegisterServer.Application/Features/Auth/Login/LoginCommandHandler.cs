@@ -31,22 +31,22 @@ internal sealed class LoginCommandHandler(
             TimeSpan? timeSpan = user.LockoutEnd - DateTime.Now;
             if (timeSpan is not null)
             {
-                return (500, $"Şifre 3 defa yanlış girildi {Math.Ceiling(timeSpan.Value.TotalMinutes)} dakika bekleyin.");
+                return (500, $"Şifre 3 defa yanlış girildi {Math.Ceiling(timeSpan.Value.TotalSeconds)} dakika bekleyin.");
             }
             else
             {
-                return (500, "5 dakika bekleyin");
+                return (500, "Wait 5 minutes");
             }
         }
 
         if (signInResult.IsNotAllowed)
         {
-            return (500, "Mail adresi onaylı değil.");
+            return (500, "E-mail address is not confirmed");
         }
 
         if (!signInResult.Succeeded)
         {
-            return (500, "Şife hatalı");
+            return (500, "Password is incorrect");
         }
 
         var loginResponse = await jwtProvider.CreateToken(user);

@@ -2,9 +2,9 @@ export class RegisterModel{
     firstName: string = "";
     lastName: string = "";
     userName: string = "";
-    dateOfBirth: string | null | undefined;
-    profilePicture: string | null | undefined;
+    dateOfBirth: any;
+    profilePicture: any;
     email: string = "";
     password: string = "";
-    phoneNumber: string | null | undefined;
+    phoneNumber: any;
 }

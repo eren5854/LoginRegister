@@ -1,5 +1,6 @@
 ﻿using ED.Result;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 
 namespace LoginRegisterServer.Application.Features.Auth.Register;
 public sealed record RegisterCommand(
@@ -7,7 +8,7 @@ public sealed record RegisterCommand(
     string LastName,
     string UserName,
     DateOnly? DateOfBirth,
-    string? ProfilePicture,
+    IFormFile? ProfilePicture,
     string Email,
     string Password,
     string PhoneNumber) : IRequest<Result<string>>;

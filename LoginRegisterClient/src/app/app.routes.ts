@@ -6,6 +6,8 @@ import { AuthService } from './services/auth.service';
 import { inject } from '@angular/core';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ConfirmEmailComponent } from './components/confirm-email/confirm-email.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { UserSettingsComponent } from './components/user-settings/user-settings.component';
 
 export const routes: Routes = [
   {
@@ -24,11 +26,19 @@ export const routes: Routes = [
       {
         path: "",
         component: HomeComponent
+      },
+      {
+        path: "user-settings",
+        component: UserSettingsComponent
       }
     ]
   },
   {
     path: "signin",
     component: SigninComponent
+  },
+  {
+    path: "forgot-password/:email",
+    component: ForgotPasswordComponent
   }
 ];

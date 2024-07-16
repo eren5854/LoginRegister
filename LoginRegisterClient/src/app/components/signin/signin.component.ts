@@ -20,23 +20,41 @@ export class SigninComponent {
 
   registerModel: RegisterModel = new RegisterModel();
   constructor(
-    private http: HttpService,
+    private http: HttpClient,
     private swal: SwalService,
     private router: Router
   ) {}
 
+  setImage(event: any){
+    console.log(event);
+    this.registerModel.profilePicture = event.target.files[0];
+  }
+
   signIn(form: NgForm){
-    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};:'\\|,.<>\/?])(?=.*[0-9])/;
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};:'\\|,.<>\/?~-])(?=.*[0-9])/;
     const str = form.controls["password"].value;
     const isValid = regex.test(str);
+    const formData = new FormData();
     if (form.valid && isValid) {
-      this.http.post("Auth/Register", this.registerModel, (res) => {
-        console.log(res);
-        
-        this.router.navigateByUrl("/login");
+      formData.append("firstName", this.registerModel.firstName);
+      formData.append("lastName", this.registerModel.lastName);
+      formData.append("userName", this.registerModel.userName);
+      formData.append("dateOfBirth", this.registerModel.dateOfBirth);
+      formData.append("profilePicture", this.registerModel.profilePicture);
+      formData.append("phoneNumber", this.registerModel.phoneNumber);
+      formData.append("email", this.registerModel.email);
+      formData.append("password", this.registerModel.password);
+      this.http.post("https://localhost:7177/api/Auth/Register", formData)
+      .subscribe({
+        next: (res:any) => {
+          console.log(res);
+          this.swal.callToast(res.message, "info");
+          this.router.navigateByUrl("/login");
+        }
       });
     }
   }
+
 
   showOrHidePassword(password: HTMLInputElement){
     if(this.isShowPassword){

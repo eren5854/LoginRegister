@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ED.GenericRepository;
 using ED.Result;
+using GenericFileService.Files;
 using LoginRegisterServer.Domain.Entities;
 using LoginRegisterServer.Domain.SmartEnums;
 using MediatR;
@@ -30,11 +31,14 @@ internal class RegisterCommandHandler(
                 {
                     return Result<string>.Failure("User name already exists");
                 }
+
+                string profilePicture = FileService.FileSaveToServer(request.ProfilePicture, "wwwroot/ProfilePictures/");
             
                 AppUser user = mapper.Map<AppUser>(request);
-                Random random = new();
-                user.EmailConfirmCode = random.Next(100000, 999999);
-                user.EmailConfirmCodeExpires = DateTime.Now;
+                //Random random = new();
+                //user.EmailConfirmCode = random.Next(100000, 999999);
+                //user.EmailConfirmCodeExpires = DateTime.Now;
+                user.ProfilePicture = profilePicture;
                 user.CreatedBy = request.UserName;
                 user.CreatedDate = DateTime.Now;
                 user.UserRole = UserRoleSmartEnum.User;

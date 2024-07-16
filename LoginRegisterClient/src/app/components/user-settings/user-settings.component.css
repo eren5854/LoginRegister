@@ -1,0 +1,94 @@
+
+.sales, .expenses, .income{
+    width: 310px;
+}
+
+.input-box{
+    width: 200%;
+    box-sizing: border-box;
+}
+
+.input-box header{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+
+.input-field label{
+    margin-top: 5px;
+}
+
+.input-box .input-field label{
+    position: relative;
+    /* top: 10px;
+    left: 10px; */
+    pointer-events: none;
+    /* transition: .5s; */
+}
+
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+}
+
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+
+.input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #743ae1;
+}
+
+.submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    width: 100px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.submit:hover{
+    background: #45bb00;
+}
+
+.psswrd-req {
+    display: flex; 
+}
+
+.psswrd-req .password-ul li{
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+
+.pw-succes{
+    color: green;
+    text-decoration: line-through;
+}
+
+.pw-error{
+    color: red;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    .input-box{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

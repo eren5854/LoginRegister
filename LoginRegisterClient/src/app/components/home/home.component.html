@@ -1,1 +1,140 @@
-<p>home works!</p>
+
+<h1>Dashboard</h1>
+
+<div class="date">
+    <input type="date">
+</div>
+
+<div class="insights">
+    <div class="sales">
+        <span class="material-symbols-sharp">monitoring</span>
+        <div class="middle">
+            <div class="left">
+                <h3>Total Sales</h3>
+                <h1>$25,024</h1>
+            </div>
+            <div class="progress" style="--clr:#04fc43; --num:75;">
+                <div class="dot"></div>
+                <svg>
+                    <circle cx='65' cy='75' r='70'></circle>
+                </svg>
+                <div class="number">
+                    <p>75%</p>
+                </div>
+            </div>
+        </div>
+        <small class="text-muted">Last 24 Hours</small>
+    </div>
+    
+    <div class="expenses">
+        <span class="material-symbols-sharp">bar_chart</span>
+        <div class="middle">
+            <div class="left">
+                <h3>Total Expenses</h3>
+                <h1>$14,024</h1>
+            </div>
+            <div class="progress" style="--num:15;">
+                <div class="dot"></div>
+                <svg>
+                    <circle cx='65' cy='75' r='70'></circle>
+                </svg>
+                <div class="number">
+                    <p>15%</p>
+                </div>
+            </div>
+        </div>
+        <small class="text-muted">Last 24 Hours</small>
+    </div>
+
+    <div class="income">
+        <span class="material-symbols-sharp">stacked_line_chart</span>
+        <div class="middle">
+            <div class="left">
+                <h3>Total Income</h3>
+                <h1>$10,024</h1>
+            </div>
+            <div class="progress" style="--clr:#04fc43; --num:60;">
+                <div class="dot"></div>
+                <svg>
+                    <circle cx='65' cy='75' r='70'></circle>
+                </svg>
+                <div class="number">
+                    <p>60%</p>
+                </div>
+            </div>
+        </div>
+        <small class="text-muted">Last 24 Hours</small>
+    </div>
+</div>
+<div class="recent-orders">
+    <h2>Recent Orders</h2>
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Number</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Foldable Mini Drone</td>
+                <td>87564</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+            </tr>
+
+            <tr>
+                <td>Foldable Mini Drone</td>
+                <td>87564</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+            </tr>
+
+            <tr>
+                <td>Foldable Mini Drone</td>
+                <td>87564</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+            </tr>
+
+            <tr>
+                <td>Foldable Mini Drone</td>
+                <td>87564</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+            </tr>
+
+            <tr>
+                <td>Foldable Mini Drone</td>
+                <td>87564</td>
+                <td>Due</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <flexi-grid [data]="product()"  [pageable]="true"
+    [pageSizeList]="[10,20,30,50,100,1000]" [filterable]="false" [resizable]="true" themeClass="dark">
+        <flexi-grid-column [visible]="false" field="id" title="Id" [sortable]="false"></flexi-grid-column>
+
+        <flexi-grid-column  [visible]="false" field="id" title="Id"></flexi-grid-column>
+
+        <flexi-grid-column field="productName" title="Product Name"></flexi-grid-column>
+
+        <flexi-grid-column field="productNumber" title="Product Number"></flexi-grid-column>
+
+        <flexi-grid-column field="payment" title="Payment"></flexi-grid-column>
+
+        <flexi-grid-column field="status"  title="Status"></flexi-grid-column>
+        
+        <flexi-grid-column title="Operations" [filterable]="false" width="180px"></flexi-grid-column>
+    </flexi-grid>
+    <!-- <a href="">Show All</a> -->
+</div>

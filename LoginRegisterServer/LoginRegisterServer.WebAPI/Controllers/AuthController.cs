@@ -5,6 +5,7 @@ using LoginRegisterServer.Application.Features.Auth.ForgotPassword;
 using LoginRegisterServer.Application.Features.Auth.Login;
 using LoginRegisterServer.Application.Features.Auth.Register;
 using LoginRegisterServer.Application.Features.Auth.SendConfirmEmal;
+using LoginRegisterServer.Application.Features.Auth.SendForgotPasswordEmail;
 using LoginRegisterServer.WebAPI.Abstraction;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -12,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LoginRegisterServer.WebAPI.Controllers;
 
-//[AllowAnonymous]
+[AllowAnonymous]
 public sealed class AuthController : ApiController
 {
     public AuthController(IMediator mediator) : base(mediator)
@@ -27,7 +28,7 @@ public sealed class AuthController : ApiController
     }
 
     [HttpPost]
-    public async Task<IActionResult> Register(RegisterCommand request, CancellationToken cancellationToken)
+    public async Task<IActionResult> Register([FromForm] RegisterCommand request, CancellationToken cancellationToken)
     {
         var result = await _mediator.Send(request, cancellationToken);
         return StatusCode(result.StatusCode, result);
@@ -64,6 +65,13 @@ public sealed class AuthController : ApiController
 
     [HttpPost]
     public async Task<IActionResult> ChangePasswordUsingToken(ChangePasswordUsingTokenCommand request, CancellationToken cancellationToken)
+    {
+        var result = await _mediator.Send(request, cancellationToken);
+        return StatusCode(result.StatusCode, result);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> SendForgotPasswordEmail(SendForgotPasswordEmailCommand request, CancellationToken cancellationToken)
     {
         var result = await _mediator.Send(request, cancellationToken);
         return StatusCode(result.StatusCode, result);

@@ -164,3 +164,5 @@ F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.
 F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\GenericEmailService.dll
 F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\MailKit.dll
 F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\MimeKit.dll
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\LoginRegisterServer.WebAPI.staticwebassets.runtime.json
+F:\Eren\Projeler\Projects\LoginRegister\LoginRegisterServer\LoginRegisterServer.WebAPI\bin\Debug\net8.0\GenericFileService.dll

@@ -11,7 +11,7 @@ internal class ConfirmEmailCommandHandler(
 {
     public async Task<Result<string>> Handle(ConfirmEmailCommand request, CancellationToken cancellationToken)
     {
-        AppUser user = await userManager.FindByEmailAsync(request.Email);
+        AppUser? user = await userManager.FindByEmailAsync(request.Email);
         if (user is null)
         {
             return Result<string>.Failure("Kullanıcı bulunamadı");

@@ -30,7 +30,7 @@ public static class DependencyInjection
             options.Password.RequireUppercase = true;
             options.Password.RequiredLength = 8;
             options.SignIn.RequireConfirmedEmail = true;
-            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(2);
+            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(1);
             options.Lockout.MaxFailedAccessAttempts = 3;
             options.Lockout.AllowedForNewUsers = true;
 

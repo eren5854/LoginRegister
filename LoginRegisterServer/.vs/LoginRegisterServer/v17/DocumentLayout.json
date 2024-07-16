@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.application\\features\\auth\\sendconfirmemal\\sendconfirmemailcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|solutionrelative:loginregisterserver.application\\features\\auth\\sendconfirmemal\\sendconfirmemailcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.application\\features\\users\\getalluser\\getalluserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|solutionrelative:loginregisterserver.application\\features\\users\\getalluser\\getalluserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B3DC4AB-C49B-4127-88A6-D5E3008A3499}|LoginRegisterServer.WebAPI\\LoginRegisterServer.WebAPI.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B3DC4AB-C49B-4127-88A6-D5E3008A3499}|LoginRegisterServer.WebAPI\\LoginRegisterServer.WebAPI.csproj|solutionrelative:loginregisterserver.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B3DC4AB-C49B-4127-88A6-D5E3008A3499}|LoginRegisterServer.WebAPI\\LoginRegisterServer.WebAPI.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B3DC4AB-C49B-4127-88A6-D5E3008A3499}|LoginRegisterServer.WebAPI\\LoginRegisterServer.WebAPI.csproj|solutionrelative:loginregisterserver.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B3DC4AB-C49B-4127-88A6-D5E3008A3499}|LoginRegisterServer.WebAPI\\LoginRegisterServer.WebAPI.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.webapi\\abstraction\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B3DC4AB-C49B-4127-88A6-D5E3008A3499}|LoginRegisterServer.WebAPI\\LoginRegisterServer.WebAPI.csproj|solutionrelative:loginregisterserver.webapi\\abstraction\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BFC0C7D-1C94-4554-B736-9BC703DE73B2}|LoginRegisterServer.Domain\\LoginRegisterServer.Domain.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BFC0C7D-1C94-4554-B736-9BC703DE73B2}|LoginRegisterServer.Domain\\LoginRegisterServer.Domain.csproj|solutionrelative:loginregisterserver.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|f:\\eren\\projeler\\projects\\loginregister\\loginregisterserver\\loginregisterserver.application\\features\\auth\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|solutionrelative:loginregisterserver.application\\features\\auth\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,49 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 207,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SendConfirmEmailCommandHandler.cs",
-              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmal\\SendConfirmEmailCommandHandler.cs",
-              "RelativeDocumentMoniker": "LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmal\\SendConfirmEmailCommandHandler.cs",
-              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmal\\SendConfirmEmailCommandHandler.cs",
-              "RelativeToolTip": "LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmal\\SendConfirmEmailCommandHandler.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T23:28:11.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApiController.cs",
-              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
-              "RelativeDocumentMoniker": "LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
-              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
-              "RelativeToolTip": "LoginRegisterServer.WebAPI\\Abstraction\\ApiController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T23:24:33.176Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "LoginRegisterServer.WebAPI\\Controllers\\AuthController.cs",
-              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "LoginRegisterServer.WebAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA+AAAA",
+              "DocumentIndex": 0,
+              "Title": "GetAllUserQueryHandler.cs",
+              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Users\\GetAllUser\\GetAllUserQueryHandler.cs",
+              "RelativeDocumentMoniker": "LoginRegisterServer.Application\\Features\\Users\\GetAllUser\\GetAllUserQueryHandler.cs",
+              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Users\\GetAllUser\\GetAllUserQueryHandler.cs",
+              "RelativeToolTip": "LoginRegisterServer.Application\\Features\\Users\\GetAllUser\\GetAllUserQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T17:52:56.368Z",
+              "WhenOpened": "2024-07-16T16:35:40.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "LoginRegisterServer.WebAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "LoginRegisterServer.WebAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:33:27.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Domain\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "LoginRegisterServer.Domain\\Entities\\AppUser.cs",
+              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Domain\\Entities\\AppUser.cs",
+              "RelativeToolTip": "LoginRegisterServer.Domain\\Entities\\AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:21:44.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterCommandHandler.cs",
+              "DocumentMoniker": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
+              "RelativeDocumentMoniker": "LoginRegisterServer.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
+              "ToolTip": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
+              "RelativeToolTip": "LoginRegisterServer.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAiwDEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T17:04:55.353Z",
               "EditorCaption": ""
             }
           ]

@@ -11,7 +11,7 @@ export class SwalService {
   callToast(message: string, icon: SweetAlertIcon = "success"){
     const Toast = Swal.mixin({
         toast: true,
-        // title: 'Giriş Başarılı',
+        title: 'Giriş Başarılı',
         position: 'bottom-end',
         timer: 3000,
         timerProgressBar: true,
@@ -20,17 +20,17 @@ export class SwalService {
     Toast.fire(message, '', icon)
   }
 
-  callToast2(message: string) {
-    Swal.fire({
-      icon: 'error',
-      title: 'Giriş başarısız',
-      text: 'Email veya şifre hatalı!!',
-      timer: 3000,
-      toast: true,
-      position: 'bottom-end',
-      showConfirmButton: false
-    });
-  }
+  // callToast2(message: string) {
+  //   Swal.fire({
+  //     icon: 'error',
+  //     title: 'Giriş başarısız',
+  //     text: 'Email veya şifre hatalı!!',
+  //     timer: 3000,
+  //     toast: true,
+  //     position: 'bottom-end',
+  //     showConfirmButton: false
+  //   });
+  // }
   callToastRegisterSuccess(message: string, icon: SweetAlertIcon = "success"){
     const Toast = Swal.mixin({
         toast: true,
@@ -43,16 +43,18 @@ export class SwalService {
     Toast.fire(message, '', icon)
   }
 
-  callToastRegisterFailed(message: string, icon: SweetAlertIcon = "warning"){
-    const Toast = Swal.mixin({
-        toast: true,
-        title: 'Hata',
-        position: 'bottom-end',
-        timer: 3000,
-        timerProgressBar: true,
-        showConfirmButton: false
+  callToastWithButton(message: string, buttonText: string, callback: () => void) {
+    Swal.fire({
+      title: message,
+      icon: 'info',
+      showCancelButton: true,
+      confirmButtonText: buttonText,
+      cancelButtonText: 'Cancel'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        callback();
+      }
     });
-    Toast.fire(message, '', icon)
   }
 }
 export type SweetAlertIcon = 'success' | 'error' | 'warning' | 'info' | 'question'

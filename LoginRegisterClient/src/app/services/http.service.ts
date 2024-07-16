@@ -40,7 +40,7 @@ get(api: string, callBack: (res:any)=> void) {
       },
       error: (err: HttpErrorResponse) => {
         if (!err.error.isSuccess) {
-          this.swal.callToastRegisterFailed(err.error.errorMessages[0], 'warning');
+          this.swal.callToast(err.error.errorMessages[0], 'warning');
         }
         else{
           this.swal.callToast(err.error, 'error');

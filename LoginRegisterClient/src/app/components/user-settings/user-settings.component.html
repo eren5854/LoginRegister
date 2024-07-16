@@ -1,0 +1,141 @@
+
+<h1>Settings</h1>
+
+<div class="date">
+    <input type="date">
+</div>
+<div class="insights">
+    <div class="sales">
+        <span class="material-symbols-sharp">person</span>
+            <div class="col-md-6 right">
+                <div class="input-box">
+                    <h2>User İnfo</h2>
+                    <form #userInfoForm1="ngForm" action="">
+                        <div class="input-field">
+                            <label for="firstName">First Name</label>
+                            <input validate type="text" name="firstName" class="form-control" id="firstName" required autocomplete="off">
+                            <div class="invalid-feedback">
+                                Name must be valid.
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label for="lastName">Last Name</label>
+                            <input validate type="text" name="lastName" class="form-control" id="lastName" required autocomplete="off">
+                            <div class="invalid-feedback">
+                                Last Name must be valid.
+                            </div>
+                        </div> 
+                        <div class="input-field">
+                            <label for="userName">User Name</label>
+                            <input validate type="text" name="userName" class="form-control" id="userName" required autocomplete="off">
+                            <div class="invalid-feedback">
+                                User name must be valid.
+                            </div>
+                        </div> 
+                        <div class="input-field">
+                            <div class="btns">
+                                <button [disabled]="" class="submit">
+                                    <i class="fa-solid fa-floppy-disk "></i>
+                                    Save</button>
+                                <a routerLink="/login"><button class="submit"><i class="fa-solid fa-xmark "></i> Cancel</button></a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        <small class="text-muted">Last 24 Hours</small>
+    </div>
+    
+    <div class="expenses">
+     <!-- <span class="material-symbols-sharp">monitoring</span> -->
+     <div class="col-md-6 right">
+        <div class="input-box">
+            <h2>User İnfo</h2>
+            <form userInfoForm2="ngForm" action="">
+                <div class="input-field">
+                    <label for="profilePicture">Profile Picture</label>
+                    <input validate type="file" name="profilePicture" class="form-control" id="profilePicture" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Profile picture must be valid.
+                    </div>
+                </div> 
+                <div class="input-field">
+                    <label for="dateOfBirth">Date Of Birth</label>
+                    <input validate type="date" name="dateOfBirth" class="form-control" id="dateOfBirth" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Date of birth must be valid.
+                    </div>
+                </div> 
+                <div class="input-field">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input validate type="text" name="phoneNumber" class="form-control" id="phoneNumber" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Phone number must be valid.
+                    </div>
+                </div>
+                <div class="input-field">
+                    <div class="btns">
+                        <button [disabled]="" class="submit">
+                            <i class="fa-solid fa-floppy-disk "></i>
+                            Save</button>
+                        <a routerLink="/login"><button class="submit"><i class="fa-solid fa-xmark "></i> Cancel</button></a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <small class="text-muted">Last 24 Hours</small>
+    </div>
+
+    <div class="income">
+       <span class="material-symbols-sharp">password</span>
+       <div class="col-md-6 right">
+        <div class="input-box">
+            <h2>Change Password</h2>
+            <form changePasswordForm="ngForm" action="">  
+                <div class="input-field">
+                    <label for="password">Current Password</label>
+                    <input validate type="password" name="password" class="form-control" id="password" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Phone number must be valid.
+                    </div>
+                </div>
+                <div class="input-field">
+                    <label for="password">New Password</label>
+                    <div class="input-group mb-3">
+                        <input required minlength="8" validate (focus)="isPasswordFocus = true" (blur)="isPasswordFocus = false" #password  name="password"   (keyup)="checkRegexPatternForPassword(password)" type="password" class="form-control">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i (click)="showOrHidePassword(password)" *ngIf="!isShowPassword" class="fa-solid fa-eye"></i>
+                            <i (click)="showOrHidePassword(password)" *ngIf="isShowPassword" class="fa-solid fa-eye-slash"></i>
+                        </span>
+                      </div>
+                      <div *ngIf="isPasswordFocus" class="psswrd-req">
+                        <ul class="password-ul">
+                            <li class="pw-error" id="minCharacter">Min 8 Character</li>
+                            <li class="pw-error" id="upperLetter">Upper Case</li>
+                            <li class="pw-error" id="lowerLetter">Lower Case</li>
+                        </ul>
+                        <ul class="password-ul">
+                            <li class="pw-error" id="specialLetter">Special Character</li>
+                            <li class="pw-error" id="numLetter">Number</li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="input-field">
+                    <div class="btns">
+                        <button [disabled]="" class="submit">
+                            <i class="fa-solid fa-floppy-disk "></i>
+                            Save</button>
+                        <a routerLink="/login"><button class="submit"><i class="fa-solid fa-xmark "></i> Cancel</button></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <small class="text-muted">Last 24 Hours</small> 
+    </div>
+</div>

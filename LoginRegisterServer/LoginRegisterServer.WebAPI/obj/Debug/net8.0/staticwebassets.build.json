@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "IUD1kLMkFMgwerv3BHN3LanrAVpOcrs/n3Z9AGlQjlU=",
+  "Hash": "7A26RcQ1qm4vQfMbDAcvKPX3bgOjKKGHkBA/87wwAJY=",
   "Source": "LoginRegisterServer.WebAPI",
   "BasePath": "_content/LoginRegisterServer.WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LoginRegisterServer.WebAPI\\wwwroot",
+      "Source": "LoginRegisterServer.WebAPI",
+      "ContentRoot": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\wwwroot\\",
+      "BasePath": "_content/LoginRegisterServer.WebAPI",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

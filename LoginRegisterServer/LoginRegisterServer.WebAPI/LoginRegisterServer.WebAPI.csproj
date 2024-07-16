@@ -20,4 +20,8 @@
     <ProjectReference Include="..\LoginRegisterServer.Infrastructure\LoginRegisterServer.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\ProfilePictures\" />
+  </ItemGroup>
+
 </Project>
