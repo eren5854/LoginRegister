@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\wwwroot\\ProfilePictures\\51ea1a61-ad28-4d0c-a05f-c58d88650fe2.jpg",
+      "PackagePath": "staticwebassets\\ProfilePictures\\51ea1a61-ad28-4d0c-a05f-c58d88650fe2.jpg"
+    },
+    {
+      "Id": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\wwwroot\\ProfilePictures\\5b8074ae-e200-4b80-9f87-9c0b8dc903e5.jpg",
+      "PackagePath": "staticwebassets\\ProfilePictures\\5b8074ae-e200-4b80-9f87-9c0b8dc903e5.jpg"
+    },
+    {
+      "Id": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\wwwroot\\ProfilePictures\\aa44a8aa-84be-4ea5-bc0c-3b9a466d4465.jpg",
+      "PackagePath": "staticwebassets\\ProfilePictures\\aa44a8aa-84be-4ea5-bc0c-3b9a466d4465.jpg"
+    },
+    {
+      "Id": "F:\\Eren\\Projeler\\Projects\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.WebAPI\\wwwroot\\ProfilePictures\\b448863f-23bd-4b4f-bc21-fccb46c44d52.jpg",
+      "PackagePath": "staticwebassets\\ProfilePictures\\b448863f-23bd-4b4f-bc21-fccb46c44d52.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LoginRegisterServer.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LoginRegisterServer.WebAPI.props",
+      "PackagePath": "build\\LoginRegisterServer.WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LoginRegisterServer.WebAPI.props",
+      "PackagePath": "buildMultiTargeting\\LoginRegisterServer.WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LoginRegisterServer.WebAPI.props",
+      "PackagePath": "buildTransitive\\LoginRegisterServer.WebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

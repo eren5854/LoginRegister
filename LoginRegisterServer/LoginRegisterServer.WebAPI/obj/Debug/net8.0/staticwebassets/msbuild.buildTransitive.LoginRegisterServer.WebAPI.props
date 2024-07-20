@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\LoginRegisterServer.WebAPI.props" />
+</Project>

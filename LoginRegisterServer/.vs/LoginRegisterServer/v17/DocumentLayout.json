@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Eren\\Projeler\\GitHub\\LoginRegister\\LoginRegisterServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|f:\\eren\\projeler\\github\\loginregister\\loginregisterserver\\loginregisterserver.application\\features\\auth\\sendconfirmemail\\sendconfirmemailcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|solutionrelative:loginregisterserver.application\\features\\auth\\sendconfirmemail\\sendconfirmemailcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|f:\\eren\\projeler\\github\\loginregister\\loginregisterserver\\loginregisterserver.application\\features\\auth\\sendforgotpasswordemail\\sendforgotpasswordemailcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49A6C912-4CF3-49FF-BBCD-93F91B1C3CD8}|LoginRegisterServer.Application\\LoginRegisterServer.Application.csproj|solutionrelative:loginregisterserver.application\\features\\auth\\sendforgotpasswordemail\\sendforgotpasswordemailcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 207,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SendForgotPasswordEmailCommandHandler.cs",
+              "DocumentMoniker": "F:\\Eren\\Projeler\\GitHub\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Auth\\SendForgotPasswordEmail\\SendForgotPasswordEmailCommandHandler.cs",
+              "RelativeDocumentMoniker": "LoginRegisterServer.Application\\Features\\Auth\\SendForgotPasswordEmail\\SendForgotPasswordEmailCommandHandler.cs",
+              "ToolTip": "F:\\Eren\\Projeler\\GitHub\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Auth\\SendForgotPasswordEmail\\SendForgotPasswordEmailCommandHandler.cs",
+              "RelativeToolTip": "LoginRegisterServer.Application\\Features\\Auth\\SendForgotPasswordEmail\\SendForgotPasswordEmailCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:43:11.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SendConfirmEmailCommandHandler.cs",
+              "DocumentMoniker": "F:\\Eren\\Projeler\\GitHub\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmail\\SendConfirmEmailCommandHandler.cs",
+              "RelativeDocumentMoniker": "LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmail\\SendConfirmEmailCommandHandler.cs",
+              "ToolTip": "F:\\Eren\\Projeler\\GitHub\\LoginRegister\\LoginRegisterServer\\LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmail\\SendConfirmEmailCommandHandler.cs",
+              "RelativeToolTip": "LoginRegisterServer.Application\\Features\\Auth\\SendConfirmEmail\\SendConfirmEmailCommandHandler.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T15:42:46.165Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

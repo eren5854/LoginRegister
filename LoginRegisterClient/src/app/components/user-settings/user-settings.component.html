@@ -1,0 +1,161 @@
+
+<h1>Settings</h1>
+
+<div class="date">
+    <input type="date" [value]="currentDate | date:'yyyy-MM-dd'">
+</div>
+<div class="insights">
+    <div class="sales">
+        <span class="material-symbols-sharp">person</span>
+            <div class="col-md-6 right">
+                <div class="input-box">
+                    <h2>User Info</h2>
+                    <form #userInfoForm="ngForm" (ngSubmit)="updateUserInfo(userInfoForm)" action="">
+
+                        <div class="input-field">
+                            <label for="firstName">First Name</label>
+                            <input [(ngModel)]="userModel.firstName" validate type="text" name="firstName" class="form-control" id="firstName" required autocomplete="off">
+                            <div class="invalid-feedback">
+                                Name must be valid.
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="lastName">Last Name</label>
+                            <input [(ngModel)]="userModel.lastName" validate type="text" name="lastName" class="form-control" id="lastName" required autocomplete="off">
+                            <div class="invalid-feedback">
+                                Last Name must be valid.
+                            </div>
+                        </div> 
+
+                        <div class="input-field">
+                            <label for="userName">User Name</label>
+                            <input [(ngModel)]="userName" validate type="text" name="userName" class="form-control" id="userName" required autocomplete="off">
+                            <div class="invalid-feedback">
+                                User name must be valid.
+                            </div>
+                        </div> 
+
+                        <div class="input-field">
+                            <label for="profilePicture">Profile Picture</label>
+                            <input type="file" #fileInput (change)="setImage($event)" name="profilePicture" class="form-control d-none" id="profilePicture" autocomplete="off">
+                            <div class="input-group">
+                              <input type="text" class="form-control" [value]="userModel.profilePicture" readonly>
+                              <div class="input-group-append">
+                                <button class="btn" type="button" (click)="triggerFileInput()"><span class="material-symbols-sharp">upload</span></button>
+                              </div>
+                            </div>
+                            <div class="invalid-feedback">
+                              Profile picture must be valid.
+                            </div>
+                          </div>
+                            
+                        <!-- <div class="input-field">
+                            <label for="profilePicture">Profile Picture</label>
+                            <input validate type="file" (change)="setImage($event)" name="profilePicture" class="form-control" id="profilePicture" autocomplete="off">
+                            <div class="invalid-feedback">
+                                Profile picture must be valid.
+                            </div>
+                        </div>  -->
+
+                        <div class="input-field">
+                            <label for="dateOfBirth">Date Of Birth</label>
+                            <input [(ngModel)]="userModel.dateOfBirth" validate type="date" name="dateOfBirth" class="form-control" id="dateOfBirth" autocomplete="off">
+                            <div class="invalid-feedback">
+                                Date of birth must be valid.
+                            </div>
+                        </div> 
+
+                        <div class="input-field">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input [(ngModel)]="userModel.phoneNumber" validate type="text" name="phoneNumber" class="form-control" id="phoneNumber" autocomplete="off">
+                            <div class="invalid-feedback">
+                                Phone number must be valid.
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <div class="btns">
+                                <button [disabled]="" class="submit">
+                                    <i class="fa-solid fa-floppy-disk "></i>
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        <!-- <small class="text-muted">Last 24 Hours</small> -->
+    </div>
+    
+    <div class="expenses">
+        <span class="material-symbols-sharp">location_on</span>
+     <div class="col-md-6 right">
+        <div class="input-box">
+            <h2>Address</h2>
+            <form addressForm="ngForm" action="">
+                
+                <div class="input-field">
+                    <div class="btns">
+                        <button [disabled]="" class="submit">
+                            <i class="fa-solid fa-floppy-disk "></i>
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <small class="text-muted">Last 24 Hours</small> -->
+    </div>
+
+    <div class="income">
+       <span class="material-symbols-sharp">password</span>
+       <div class="col-md-6 right">
+        <div class="input-box">
+            <h2>Change Password</h2>
+            <form #changePasswordForm="ngForm" (ngSubmit)="changePassword(changePasswordForm)">  
+                <div class="input-field">
+                    <label for="password">Current Password</label>
+                    <input [(ngModel)]="changePasswordModel.currentPassword" validate type="password" name="password" class="form-control" id="password" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Current Password must be valid.
+                    </div>
+                </div>
+                <div class="input-field">
+                    <label for="password">New Password</label>
+                    <div class="input-group mb-3">
+                        <input [(ngModel)]="changePasswordModel.newPassword" required minlength="8" validate (focus)="isPasswordFocus = true" (blur)="isPasswordFocus = false" #password  name="password"   (keyup)="checkRegexPatternForPassword(password)" type="password" class="form-control">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i (click)="showOrHidePassword(password)" *ngIf="!isShowPassword" class="fa-solid fa-eye"></i>
+                            <i (click)="showOrHidePassword(password)" *ngIf="isShowPassword" class="fa-solid fa-eye-slash"></i>
+                        </span>
+                      </div>
+                      <div *ngIf="isPasswordFocus" class="psswrd-req">
+                        <ul class="password-ul">
+                            <li class="pw-error" id="minCharacter">Min 8 Character</li>
+                            <li class="pw-error" id="upperLetter">Upper Case</li>
+                            <li class="pw-error" id="lowerLetter">Lower Case</li>
+                        </ul>
+                        <ul class="password-ul">
+                            <li class="pw-error" id="specialLetter">Special Character</li>
+                            <li class="pw-error" id="numLetter">Number</li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="input-field">
+                    <div class="btns">
+                        <button [disabled]="" class="submit">
+                            <i class="fa-solid fa-floppy-disk "></i>
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <small class="text-muted">Last 24 Hours</small>  -->
+    </div>
+</div>
